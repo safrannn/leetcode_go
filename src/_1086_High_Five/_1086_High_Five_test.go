@@ -1,3 +1,5 @@
+package _1086_High_Five
+
 import "testing"
 
 func TestHighFive(t *testing.T) {
@@ -7,7 +9,7 @@ func TestHighFive(t *testing.T) {
 	}
 	b := [][]int{[]int{1,68},[]int{2,48},[]int{3,60},[]int{4,56},[]int{6,1}}
 	if highFive(a) != b{
-		t.Error("wrong") // to indicate test failed
+		t.Errorf("wrong") // to indicate test failed
 	}else{
 		fmt.Println("right")
 	}

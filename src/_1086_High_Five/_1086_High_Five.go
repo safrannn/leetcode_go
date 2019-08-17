@@ -1,3 +1,4 @@
+package _1086_High_Five
 
 func highFive(items [][]int) [][]int {
     scoreMap := make(map[int][]int)
