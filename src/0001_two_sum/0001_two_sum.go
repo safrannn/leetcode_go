@@ -1,4 +1,4 @@
-package _1_Two_Sum
+package problem0001
 
 func twoSum(nums []int, target int) []int {
 	aMap := make(map[int]int)
@@ -6,7 +6,7 @@ func twoSum(nums []int, target int) []int {
 	for i, v := range nums {
 		j, w := aMap[target-v]
 		if w {
-			return []int{j,i}
+			return []int{j, i}
 		}
 		aMap[v] = i
 	}

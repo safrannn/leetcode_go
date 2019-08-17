@@ -1,4 +1,4 @@
-package _1086_High_Five
+package problem1086
 
 import "testing"
 
