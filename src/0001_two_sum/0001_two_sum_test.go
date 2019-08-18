@@ -2,18 +2,16 @@ package problem0001
 
 import (
 	"fmt"
+	"reflect"
 	"testing"
 )
 
 func TestTwoSum(t *testing.T) {
 	a := []int{2, 7, 11, 15}
-	result := []int{0, 1}
-	answer := twoSum(a, 9)
-	for i := range answer {
-		if answer[i] != result[i] {
-			t.Errorf("wrong")
-			break
-		}
+	answer := []int{0, 1}
+	result := twoSum(a, 9)
+	if !reflect.DeepEqual(answer, result) {
+		t.Errorf("wrong") // to indicate test failed
 	}
 	fmt.Println("the end")
 }
