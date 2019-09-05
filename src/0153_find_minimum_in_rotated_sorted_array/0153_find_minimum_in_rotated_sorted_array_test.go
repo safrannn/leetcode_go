@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0153(t *testing.T) {
 	a1 := []int{3, 4, 5, 1, 2}
 	a1answer := 1
 	result1 := findMin(a1)

@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0152(t *testing.T) {
 	a1 := []int{2, 3, -2, 4}
 	a1answer := 6
 	result1 := maxProduct(a1)

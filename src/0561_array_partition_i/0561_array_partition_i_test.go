@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0561(t *testing.T) {
 	a := []int{1432}
 	answer := 4
 	result := arrayPairSum(a)

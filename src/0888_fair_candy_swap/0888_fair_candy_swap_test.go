@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0888(t *testing.T) {
 	a1 := []int{1, 1}
 	a2 := []int{2, 2}
 	aanswer := []int{1, 2}

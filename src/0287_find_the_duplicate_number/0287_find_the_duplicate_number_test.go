@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0287(t *testing.T) {
 	a1 := []int{1, 3, 4, 2, 2}
 	a1answer := 2
 	result1 := findDuplicate(a1)

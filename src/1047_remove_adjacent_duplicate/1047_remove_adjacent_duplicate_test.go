@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestHighFive(t *testing.T) {
+func TestProblem1047(t *testing.T) {
 	a := "abbaca"
 	answer := "ca"
 	result := removeDuplicates(a)

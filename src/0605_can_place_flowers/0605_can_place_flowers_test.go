@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0605(t *testing.T) {
 	a := []int{1, 0, 0, 0, 1}
 	answer := false
 	result := canPlaceFlowers(a, 2)

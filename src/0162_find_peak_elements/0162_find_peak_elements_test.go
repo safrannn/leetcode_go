@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0162(t *testing.T) {
 	a1 := []int{1, 2, 1, 3, 5, 6, 4}
 	a1answer := 5
 	result1 := findPeakElement(a1)

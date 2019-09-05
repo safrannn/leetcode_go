@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0994(t *testing.T) {
 	a := [][]int{[]int{2, 1, 1}, []int{0, 1, 1}, []int{1, 0, 1}}
 	answer := -1
 	result := orangesRotting(a)

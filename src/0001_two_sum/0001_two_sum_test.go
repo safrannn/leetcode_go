@@ -6,7 +6,7 @@ import (
 	"testing"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestProblem0001(t *testing.T) {
 	a := []int{2, 7, 11, 15}
 	answer := []int{0, 1}
 	result := twoSum(a, 9)

@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func TestProblem0326(t *testing.T) {
 	a1 := 27
 	a1answer := true
 	a1result := isPowerOfThree(a1)

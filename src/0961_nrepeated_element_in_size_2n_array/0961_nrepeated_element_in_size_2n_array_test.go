@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestDivisorGame(t *testing.T) {
+func Testroblem0961(t *testing.T) {
 	a1 := []int{1, 2, 3, 3}
 	a1answer := 3
 	result1 := repeatedNTimes(a1)
