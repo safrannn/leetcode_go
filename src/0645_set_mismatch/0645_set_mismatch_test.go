@@ -1,4 +1,4 @@
-package problem0994
+package problem0645
 
 import (
 	"reflect"
@@ -6,9 +6,9 @@ import (
 )
 
 func TestDivisorGame(t *testing.T) {
-	a := [][]int{[]int{2, 1, 1}, []int{0, 1, 1}, []int{1, 0, 1}}
-	answer := -1
-	result := orangesRotting(a)
+	a := []int{1, 2, 2, 4}
+	answer := []int{2, 3}
+	result := findErrorNums(a)
 	if !reflect.DeepEqual(answer, result) {
 		t.Errorf("wrong") // to indicate test failed
 	}

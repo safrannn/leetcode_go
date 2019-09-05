@@ -5,17 +5,6 @@ import (
 	"testing"
 )
 
-func isPowerOfThree(n int) bool {
-	if n < 1 {
-		return false
-	}
-
-	for n%3 == 0 {
-		n /= 3
-	}
-	return n == 1
-}
-
 func TestDivisorGame(t *testing.T) {
 	a1 := 27
 	a1answer := true

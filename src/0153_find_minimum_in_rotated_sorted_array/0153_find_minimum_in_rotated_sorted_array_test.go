@@ -5,23 +5,6 @@ import (
 	"testing"
 )
 
-func findMin(nums []int) int {
-	left, right, mid := 0, len(nums)-1, 0
-
-	for left < right {
-		if nums[left] < nums[right] {
-			return nums[left]
-		}
-		mid = (left + right) / 2
-
-		if nums[mid] > nums[right] {
-			left = mid + 1
-		} else {
-			right = mid
-		}
-	}
-	return nums[left]
-}
 func TestDivisorGame(t *testing.T) {
 	a1 := []int{3, 4, 5, 1, 2}
 	a1answer := 1

@@ -1,6 +1,6 @@
 package problem0075
 
-func sortColors(nums []int) {
+func sortColors(nums []int) []int {
 	leftBound, rightBound := 0, len(nums)-1
 
 	for i := 0; i <= rightBound; i++ {
