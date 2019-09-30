@@ -1,27 +1,24 @@
-package problem0735
+package problem1118
 
 import (
 	"reflect"
 	"testing"
 )
 
-func TestProblem0735(t *testing.T) {
-	answer := []int{5,10}
-	result := asteroidCollision([]int{5,10,-5})
+func TestProblem1118(t *testing.T) {
+	answer := 31
+	result := numberOfDays(1992,7)
 	if !reflect.DeepEqual(answer, result) {
 		t.Errorf("wrong") // to indicate test failed
     }
-
-    answer = []int{}
-	result = asteroidCollision([]int{8,-8})
+    answer = 29
+	result = numberOfDays(2000,2)
 	if !reflect.DeepEqual(answer, result) {
 		t.Errorf("wrong") // to indicate test failed
     }
-
-    answer = []int{-2,-1,1,2}
-	result = asteroidCollision([]int{-2,-1,1,2})
+    answer = 28
+	result = numberOfDays(1900,2)
 	if !reflect.DeepEqual(answer, result) {
 		t.Errorf("wrong") // to indicate test failed
     }
 }
-

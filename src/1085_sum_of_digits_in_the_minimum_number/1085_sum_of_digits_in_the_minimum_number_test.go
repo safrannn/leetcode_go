@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestProblem0455(t *testing.T) {
+func TestProblem1085(t *testing.T) {
 	answer := 0
 	result := sumOfDigits([]int{34,23,1,24,75,33,54,8})
 	if !reflect.DeepEqual(answer, result) {
