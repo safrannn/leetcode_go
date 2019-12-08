@@ -47,8 +47,5 @@ func accountsMerge(accounts [][]string) [][]string {
 		currentList = append(currentList, emails...)
 		result = append(result, currentList)
 	}
-
-	fmt.Println(result)
-
 	return result
 }
