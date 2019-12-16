@@ -5,8 +5,8 @@ type UnionSet struct {
 	Parent []int
 }
 
-func (u *UnionSet) Init(){
-	u.Parent = make([]int, 10000)
+func (u *UnionSet) Init(length int){
+	u.Parent = make([]int, length)
 	for k := range u.Parent{
 		u.Parent[k] = k
 	}

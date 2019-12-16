@@ -10,7 +10,7 @@ type UnionSet = types.UnionSet
 
 func accountsMerge(accounts [][]string) [][]string {
 	var u UnionSet
-	u.Init()
+	u.Init(100000)
 
 
 	emailToName := make(map[string]string)
