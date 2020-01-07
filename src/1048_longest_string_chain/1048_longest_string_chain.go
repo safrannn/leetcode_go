@@ -3,29 +3,64 @@ package problem1048
 import "sort"
 
 func longestStrChain(words []string) int {
-    // sort words from shortest to longest
     sort.SliceStable(words, func(i, j int) bool {
         return len(words[i]) < len(words[j])
     })
-    // for each word, loops all its possible predecessor
-    // update the longest chain length
-    result := 0
-    helperMap := make(map[string]int)
+    
+    wordsMap := make(map[int][]string)
     for _,v := range words{
-        best := 0
-        for j := range v{
-            prevWord := v[0:j] + v[j+1:]
-            best = max(best, helperMap[prevWord] + 1)
+        wordsMap[len(v)] = append(wordsMap[len(v)],v)
+    }
+    
+    wordsPreCount := make(map[string]int)
+    result := 0
+    
+    for i := 1; i <= 16; i++{
+        if len(wordsMap[i]) == 0{
+            continue
         }
-        helperMap[v] = best
-        result = max(result, best)
+        
+        for _,word := range wordsMap[i]{
+            _,prs := wordsPreCount[word]
+            if !prs{
+                wordsPreCount[word] = 1
+            }
+            result = max(result, wordsPreCount[word])
+            
+            for _, newWord := range wordsMap[i+1]{
+                if isPre(word,newWord){
+                    wordsPreCount[newWord] = max(wordsPreCount[newWord],wordsPreCount[word] + 1)
+                    result = max(result,wordsPreCount[newWord] )
+                }
+            }
+        }
+        
     }
     return result
+    
+}
+
+func isPre(cand, word string)bool{
+    iCand,iWord := 0,0
+    diff := false
+    for iCand < len(cand) && iWord < len(word){
+        if cand[iCand] == word[iWord]{
+            iCand++
+            iWord++
+        }else{
+            if diff {
+                return false
+            }
+            diff = true
+            iWord++
+        }
+    }
+    return true
 }
 
 func max(a,b int)int{
-    if a > b {
-        return a 
+    if a > b{
+        return a
     }
     return b
 }
