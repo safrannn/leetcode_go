@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func TestProblem0456(t *testing.T) {
+func TestProblem1342(t *testing.T) {
 	if !reflect.DeepEqual(numberOfSteps(14), 6) {
 		t.Errorf("wrong") // to indicate test failed
 	}
