@@ -5,6 +5,7 @@ func lexicalOrder(n int) []int {
     dfs(&result, 0, n);
     return result
 }
+
 func dfs(result *[]int, current int, n int){
     for i:=0;i<10;i++{
         temp := current*10 + i;
